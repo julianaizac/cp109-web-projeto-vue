@@ -1,27 +1,25 @@
 <template>
-    <v-navigation-drawer app color="secondary" permanent>   
-        <v-list-item>
+    <v-navigation-drawer app color="secondary" absolute clipped>   
+        <v-list dense nav>
+          <v-list-item>
             <v-list-item-content>
                 <v-list-item-title class="text-h6">
-                    Navegação
+                    Lorem
                 </v-list-item-title>
             </v-list-item-content>
-        </v-list-item>
+          </v-list-item>
 
-        <v-divider></v-divider>
+          <v-divider></v-divider>
+          <v-list-item v-for="item in items" :key="item.title" link>
 
-        <v-list dense nav>
-            <v-list-item v-for="item in items" :key="item.title" link>
+            <v-list-item-icon>
+                <v-icon>{{ item.icon }}</v-icon>
+            </v-list-item-icon>
 
-                <v-list-item-icon>
-                    <v-icon>{{ item.icon }}</v-icon>
-                </v-list-item-icon>
-
-                <v-list-item-content>
-                    <v-list-item-title>{{ item.title }}</v-list-item-title>
-                </v-list-item-content>
-
-            </v-list-item>
+            <v-list-item-content>
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </v-list>
     </v-navigation-drawer>
 </template>
@@ -31,9 +29,9 @@
     data () {
       return {
         items: [
-          { title: 'Home', icon: 'mdi-view-dashboard' },
-          { title: 'Photos', icon: 'mdi-image' },
-          { title: 'About', icon: 'mdi-help-box' },
+          { title: 'Lorem', icon: 'mdi-view-dashboard' },
+          { title: 'Lorem', icon: 'mdi-image' },
+          { title: 'Lorem', icon: 'mdi-help-box' },
         ],
         right: null,
       }

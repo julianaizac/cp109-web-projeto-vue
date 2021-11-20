@@ -1,16 +1,15 @@
 <template>
   <v-app app>
+    <SystemBar></SystemBar>
 
     <AppBar></AppBar>
     <Navigation></Navigation>
 
-    <v-main app>
+    <v-main>
       <Content></Content>
     </v-main>
 
-    <Bottom></Bottom>
     <Footer></Footer>
-    
       
   </v-app>
 </template>
@@ -21,6 +20,7 @@ import AppBar from "./components/AppBar.vue";
 import Content from "./components/Content.vue";
 import Footer from "./components/Footer.vue";
 import Navigation from "./components/Navigation.vue";
+import SystemBar from "./components/SystemBar.vue";
 
 
 export default {
@@ -29,7 +29,8 @@ export default {
     AppBar,
     Content,
     Footer,
-    Navigation
+    Navigation,
+    SystemBar
   }
 }
 </script>
