@@ -1,7 +1,7 @@
 # AF - Projeto
 
 ## Resultado final
-<img src=".gihub/projeto.png">
+<img alt="Happy" src=".github/projeto.png" width="100%">
 
 ## Project setup
 ```
