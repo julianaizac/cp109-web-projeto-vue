@@ -30,8 +30,8 @@
       return {
         items: [
           { title: 'Albuns', icon: 'mdi-view-dashboard', url: "/albuns"},
-          { title: 'Músicas', icon: 'mdi-image', url: "/musicas"},
-          { title: 'Séries', icon: 'mdi-view-dashboard', url: "/series"}
+          { title: 'Músicas', icon: 'mdi-music', url: "/musicas"},
+          { title: 'Séries', icon: 'mdi-video', url: "/series"}
         ],
         right: null,
       }
