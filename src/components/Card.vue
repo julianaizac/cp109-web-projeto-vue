@@ -12,9 +12,9 @@
     </v-img>
 
     <v-card-text class="text--primary">
-      <div>Whitsunday Island, Whitsunday Islands</div>
+      <div>{{cardInfo}}</div>
     </v-card-text>
-    
+
   </v-card>
 </template>
 
