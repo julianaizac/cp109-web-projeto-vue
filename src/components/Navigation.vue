@@ -4,7 +4,7 @@
           <v-list-item>
             <v-list-item-content>
                 <v-list-item-title class="text-h6">
-                    Lorem
+                  Navegação
                 </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
@@ -29,8 +29,9 @@
     data () {
       return {
         items: [
-          { title: 'Lorem', icon: 'mdi-view-dashboard', url: "/contact"},
-          { title: 'Lorem', icon: 'mdi-image', url: "/about"}
+          { title: 'Albuns', icon: 'mdi-view-dashboard', url: "/albuns"},
+          { title: 'Músicas', icon: 'mdi-image', url: "/musicas"},
+          { title: 'Séries', icon: 'mdi-view-dashboard', url: "/series"}
         ],
         right: null,
       }

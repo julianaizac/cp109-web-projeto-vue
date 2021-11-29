@@ -1,27 +1,22 @@
 <template>
-  <v-card
-    class="mx-auto"
-    max-width="400"
-  >
-    <v-img
-      class="white--text align-end"
-      height="200px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-    >
-      <v-card-title>{{cardInfo}}</v-card-title>
-    </v-img>
+  <v-card :loading="loading" class="mx-auto my-12" max-width="374">
+    <template slot="progress">
+      <v-progress-linear
+        color="deep-purple"
+        height="10"
+        indeterminate
+      ></v-progress-linear>
+    </template>
 
-    <v-card-text class="text--primary">
-      <div>{{cardInfo}}</div>
-    </v-card-text>
-
+    <v-card-title>{{cardInfo.title}}</v-card-title>
+    <v-card-title>{{cardInfo.description}}</v-card-title>
   </v-card>
 </template>
 
 <script>
 
 export default{
-    props:['cardId', 'cardInfo']
+    props:['cardInfo']
 }
 
 </script>
