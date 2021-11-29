@@ -1,16 +1,34 @@
 <template>
-  <v-card elevation="2" style="margin: 2rem">
-    <v-card-title>About</v-card-title>
-    <v-card-text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nam, incidunt quas dolores commodi in mollitia quae sit, quia dolorem corrupti at ipsum quaerat officia similique quis quidem nisi. Eligendi.</v-card-text>
-  </v-card>
+  <v-row no-gutters>
+    <v-col v-for="{data, i} in myCards" 
+          :key="i" cols="12" sm="12" md="4" xs="2">
+      <Card :cardId="i" :cardInfo="data"/>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
 
+import Card from "../components/Card.vue";
+
 export default {
   name: 'About',
+
   components: {
-    
+    Card
+  },
+
+  data(){
+    return{
+       titleView: this.$store.title
+    }
+  },
+
+  computed:{
+    myCards(){
+      return this.$store.cards
+    }
   }
+
 }
 </script>
