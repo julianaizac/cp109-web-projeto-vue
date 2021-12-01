@@ -1,7 +1,16 @@
-# AF - Projeto
+<h2 align="center">Caldeirão Furado</h2>
 
-## Resultado final
-<img alt="Happy" src=".github/projeto.png" width="100%">
+## Página - Casas
+<img src=".github/casas.png" width="100%">
+
+## Página - Personagens
+<img src=".github/personagens.png" width="100%">
+
+## Página - Horcruxes
+<img src=".github/horcruxes.png" width="100%">
+
+## Página - Matérias de Hogwarts
+<img src=".github/materias.png" width="100%">
 
 ## Project setup
 ```
