@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Series from '../views/Series.vue'
-import Albuns from '../views/Albuns.vue'
-import Musica from '../views/Musica.vue'
+import Casas from '../views/Casas.vue'
+import Personagens from '../views/Personagens.vue'
+import Horcruxes from '../views/Horcruxes.vue'
+import MateriasHogwarts from '../views/MateriasHogwarts.vue'
 
 Vue.use(VueRouter)
 
@@ -14,19 +15,23 @@ const routes = [
     component: Home
   },
   {
-    path: '/albuns',
-    name: 'Albuns',
-    component: Albuns
+    path: '/casas',
+    name: 'Casas',
+    component: Casas
   },
   {
-    path: '/series',
-    name: 'Series',
-    component: Series
+    path: '/personagens',
+    name: 'Personagens',
+    component: Personagens
   },
   {
-    path: '/musicas',
-    name: 'Musica',
-    component: Musica
+    path: '/horcruxes',
+    name: 'Horcruxes',
+    component: Horcruxes
+  },{
+    path: '/materiasHogwarts',
+    name: 'MateriasHogwarts',
+    component: MateriasHogwarts
   }
   
 ]

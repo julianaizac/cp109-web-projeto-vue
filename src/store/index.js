@@ -5,59 +5,90 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
-        cardsAlbums: [
+        cardsCasas: [
             {
-                title: "Map of the Soul: 7",
-                description: "Foi lançado em 21 de fevereiro de 2020 pela Big Hit Entertainment, tendo a faixa Black swan como primeiro single promocional, e ON como single principal."
-            },
-            {
-                title: "Wings",
-                description: "O álbum foi lançado em 10 de outubro de 2016."
-            },
-            {
-                title: "Love Yourself: Tear",
-                description: "O álbum foi lançado no dia 18 de maio de 2018 pela Big Hit Entertainment."
-            },
-            {
-                title: "Love Yourself: Answer",
-                description: "É o terceiro álbum de coletânea coreano do grupo. O álbum foi lançado no dia 24 de agosto de 2018 pela Big Hit Entertainment"
+                nome: "Grifinória",
+                criador: "Godric Gryffindor",
+                animalSimbolo: "Leão",
+                fantasma: "Sir Nicholas de Mimsy-Porpington (Nick Quase-Sem-Cabeça)",
+                urlImagem: "grifinoria.jpg"
+            }, {
+                nome: "Sonserina",
+                criador: "Salazar Slytherin",
+                animalSimbolo: "Cobra",
+                fantasma: "Barão Sangrento",
+                urlImagem: "sonserina.jpg"
+            }, {
+                nome: "Corvinal",
+                criador: "Rowena Ravenclaw",
+                animalSimbolo: "Águia",
+                fantasma: "Helena Ravenclaw (Dama Cinzenta)",
+                urlImagem: "corvinal.jpg"
+            }, {
+                nome: "Lufa-Lufa",
+                criador: "Helga Hufflepuff",
+                animalSimbolo: "Texugo",
+                fantasma: "Frei Gorducho",
+                urlImagem: "lufalufa.jpg"
             }
         ],
-        cardsMusicas: [
+        cardsPersonagens: [
             {
-                title: "Singularity",
-                description: "Música cantada pelo V"
+                nome: "Harry Potter",
+                nascimento: "31 de julho de 1980",
+                casaDeHogwarts: "Grifinória"
+            },{
+                nome: "Ronald Weasley",
+                nascimento: "1 de março de 1980",
+                casaDeHogwarts: "Grifinória"
+            },{
+                nome: "Hermione Granger",
+                nascimento: "19 de setembro de 1979",
+                casaDeHogwarts: "Grifinória"
+            },{
+                nome: "Draco Malfoy",
+                nascimento: "5 de junho de 1980",
+                casaDeHogwarts: "Sonserina"
             },
-            {
-                title: "Euphoria",
-                description: "Música cantada pelo Jungkook"
-            },
-            {
-                title: "Just Dance",
-                description: "Música cantada pelo J-Hope"
-            },
-            {
-                title: "Awake",
-                description: "Música cantada pelo Jin"
-            }
         ],
-        cardsSeries: [
+        cardsMateriasDeHogwarts: [
             {
-                title: "Bon Voyage 1",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima ipsam, quos, quasi fugit quod reprehenderit odit dolor vel a libero molestias incidunt illum? Libero dolores inventore sint consequuntur pariatur."
+                nome: "Defesa Contra as Artes das Trevas",
+                descricao: "Defesa Contra as Artes das Trevas é uma matéria obrigatória na Escola de Magia e Bruxaria de Hogwarts, na qual os alunos aprendem como se defender magicamente contra Criaturas das Trevas e contra as Artes das Trevas."
+            },{
+                nome: "Poções",
+                descricao: "Poções é uma matéria obrigatória e lecionada na Escola de Magia e Bruxaria de Hogwarts. Nesta aula, os alunos aprendem a maneira correta de preparar poções. Eles seguem receitas específicas e usam vários ingredientes mágicos para criar as poções, começando com as simples e movendo-se para as mais avançados à medida que progridem no conhecimento."
+            },{
+                nome: "Herbologia",
+                descricao: "A Herbologia é uma matéria lecionada nas estufas de Hogwarts, basicamente o estudo das plantas do mundo bruxo.O atual professor é Neville Longbottom, a antiga é a Professora Pomona Sprout. Aprender Herbologia é muito importante para o preparo de algumas poções e alguns medicamentos, algumas profissões no mundo bruxo exigem tirar boas notas nos N.O.M.s e N.I.E.M.s  de Herbologia."
+            },{
+                nome: "Transfiguração",
+                descricao: "A Transfiguração é uma das principais matérias lecionadas na Escola de Magia e Bruxaria de Hogwarts. Ela ensina a arte de mudar a forma e aparência de um objeto."
             },
+        ],
+        cardsHorcruxes: [
             {
-                title: "Bon Voyage 2",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima ipsam, quos, quasi fugit quod reprehenderit odit dolor vel a libero molestias incidunt illum? Libero dolores inventore sint consequuntur pariatur."
+                nome: "Diário de Riddle",
+                urlImagem: ""
+            },{
+                nome: "Anel dos Gaunt",
+                urlImagem: ""
+            },{
+                nome: "Medalhão de Sonserina",
+                urlImagem: ""
+            },{
+                nome: "Taça de Lufa-Lufa",
+                urlImagem: ""
+            },{
+                nome: "Diadema de Rowena Ravenclaw",
+                urlImagem: ""
+            },{
+                nome: "Nagini",
+                urlImagem: ""
+            },{
+                nome: "Harry Potter",
+                urlImagem: ""
             },
-            {
-                title: "In the Soop 1",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima ipsam, quos, quasi fugit quod reprehenderit odit dolor vel a libero molestias incidunt illum? Libero dolores inventore sint consequuntur pariatur."
-            },
-            {
-                title: "In the Soop 2",
-                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima ipsam, quos, quasi fugit quod reprehenderit odit dolor vel a libero molestias incidunt illum? Libero dolores inventore sint consequuntur pariatur."
-            }
         ]
     },
     mutations: {

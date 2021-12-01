@@ -10,6 +10,7 @@
           </v-list-item>
 
           <v-divider></v-divider>
+
           <v-list-item v-for="item in items" :key="item.title" link @click="$router.push(item.url)">
 
             <v-list-item-icon>
@@ -29,9 +30,11 @@
     data () {
       return {
         items: [
-          { title: 'Albuns', icon: 'mdi-view-dashboard', url: "/albuns"},
-          { title: 'Músicas', icon: 'mdi-music', url: "/musicas"},
-          { title: 'Séries', icon: 'mdi-video', url: "/series"}
+          { title: 'Início', icon: 'mdi-home', url: "/"},
+          { title: 'Casas', icon: 'mdi-tie', url: "/casas"},
+          { title: 'Personagens', icon: 'mdi-account-group', url: "/personagens"},
+          { title: 'Horcruxes', icon: 'mdi-eject', url: "/horcruxes"},
+          { title: 'Matérias de Hogwarts', icon: 'mdi-bookshelf', url: "/materiasHogwarts"}
         ],
         right: null,
       }
