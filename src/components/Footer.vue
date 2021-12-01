@@ -12,7 +12,7 @@
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} — <strong>Juliana izac</strong>
+          {{ new Date().getFullYear() }} | <strong>Caldeirão Furado</strong> — Juliana izac
         </v-card-text>
       </v-card>
     </v-footer>
