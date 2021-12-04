@@ -9,7 +9,7 @@
       <router-view></router-view>
     </v-content>
 
-    <Footer :items="items"></Footer>
+    <Footer></Footer>
       
   </v-app>
 </template>
