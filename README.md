@@ -1,16 +1,23 @@
 <h2 align="center">Caldeirão Furado</h2>
 
-## Página - Casas
-<img src=".github/casas.png" width="100%">
+## View - Home
+<img src=".github/home.png" width="100%">
 
-## Página - Personagens
-<img src=".github/personagens.png" width="100%">
+## View - All characters
+<img src=".github/allcharacters.png" width="100%">
 
-## Página - Horcruxes
-<img src=".github/horcruxes.png" width="100%">
+## View - Gryffindor characters
+<img src=".github/gryffindor-characters.png" width="100%">
 
-## Página - Matérias de Hogwarts
-<img src=".github/materias.png" width="100%">
+## View - Slytherin characters
+<img src=".github/slytherin-characters.png" width="100%">
+
+## View - Ravenclaw characters
+<img src=".github/ravenclaw-characters.png" width="100%">
+
+## View - Hufflepuff characters
+<img src=".github/hufflepuff-characters.png" width="100%">
+
 
 ## Project setup
 ```
