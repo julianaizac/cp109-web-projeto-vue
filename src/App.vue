@@ -2,14 +2,14 @@
   <v-app app>
     <SystemBar></SystemBar>
 
-    <AppBar></AppBar>
-    <Navigation></Navigation>
+    <AppBar :items="items"></AppBar>
+    <Navigation :items="items"></Navigation>
 
     <v-content>
       <router-view></router-view>
     </v-content>
 
-    <Footer></Footer>
+    <Footer :items="items"></Footer>
       
   </v-app>
 </template>
@@ -29,7 +29,20 @@ export default {
     Footer,
     Navigation,
     SystemBar
-  }
+  },
+  data () {
+      return {
+        items: [
+          { title: 'Home', icon: 'mdi-home', url: "/"},
+          { title: 'All characters', icon: 'mdi-account-group', url: "/characters"},
+          { title: 'Gryffindor characters', icon: 'mdi-paw', url: "/characters/gryffindor"},
+          { title: 'Slytherin characters', icon: 'mdi-snake', url: "/characters/slytherin"},
+          { title: 'Ravenclaw characters', icon: 'mdi-bird', url: "/characters/ravenclaw"},
+          { title: 'Hufflepuff characters', icon: 'mdi-cat', url: "/characters/hufflepuff"}
+        ],
+        right: null,
+      }
+    }
 }
 
 </script>

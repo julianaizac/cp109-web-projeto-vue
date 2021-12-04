@@ -1,19 +1,21 @@
 <template>
     <v-app-bar app clipped-left color="primary" dark>
-         <v-toolbar-title>The Leaky Cauldron</v-toolbar-title>
+        <v-toolbar-title>The Leaky Cauldron</v-toolbar-title>
 
-         <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
 
-         <v-btn icon>
-            <v-icon>mdi-magnify</v-icon>
-        </v-btn>
-
-        <v-btn icon>
-            <v-icon>mdi-heart</v-icon>
-        </v-btn>
-
-        <v-btn icon>
-            <v-icon>mdi-dots-vertical</v-icon>
-        </v-btn>
+        <div class="d-flex flex-row">
+            <v-list-item v-for="item in items" :key="item.title" link @click="$router.push(item.url)">
+                <v-list-item-content>
+                    <v-list-item-title>{{ item.title }}</v-list-item-title>
+                </v-list-item-content>
+            </v-list-item>
+        </div>
     </v-app-bar>
 </template>
+
+<script>
+export default{
+    props:['items']
+}
+</script>
