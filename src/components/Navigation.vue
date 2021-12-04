@@ -1,10 +1,10 @@
 <template>
-    <v-navigation-drawer app color="secondary" absolute clipped>   
-        <v-list dense nav>
+    <v-navigation-drawer app color="secondary" clipped tile height="100%" permanent dense fixed>   
+      <v-list dense nav>
           <v-list-item>
             <v-list-item-content>
                 <v-list-item-title class="text-h6">
-                  Navegação
+                  MARAUDER'S MAP
                 </v-list-item-title>
             </v-list-item-content>
           </v-list-item>
@@ -30,11 +30,12 @@
     data () {
       return {
         items: [
-          { title: 'Início', icon: 'mdi-home', url: "/"},
-          { title: 'Casas', icon: 'mdi-tie', url: "/casas"},
-          { title: 'Personagens', icon: 'mdi-account-group', url: "/personagens"},
-          { title: 'Horcruxes', icon: 'mdi-eject', url: "/horcruxes"},
-          { title: 'Matérias de Hogwarts', icon: 'mdi-bookshelf', url: "/materiasHogwarts"}
+          { title: 'Home', icon: 'mdi-home', url: "/"},
+          { title: 'All characters', icon: 'mdi-account-group', url: "/characters"},
+          { title: 'Gryffindor characters', icon: 'mdi-paw', url: "/characters/gryffindor"},
+          { title: 'Slytherin characters', icon: 'mdi-snake', url: "/characters/slytherin"},
+          { title: 'Ravenclaw characters', icon: 'mdi-bird', url: "/characters/ravenclaw"},
+          { title: 'Hufflepuff characters', icon: 'mdi-cat', url: "/characters/hufflepuff"}
         ],
         right: null,
       }

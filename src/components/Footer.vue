@@ -1,8 +1,18 @@
 <template>
-    <v-footer v-bind="localAttrs" :padless="padless">
-      <v-card flat tile width="100%" class="quaternary lighten-1 text-center">
+  <v-footer padless>
+    <v-card
+        flat
+        tile
+        width="100%"
+        class="red lighten-1 text-center"
+      >
         <v-card-text>
-          <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            class="mx-4"
+            icon
+          >
             <v-icon size="24px">
               {{ icon }}
             </v-icon>
@@ -12,19 +22,21 @@
         <v-divider></v-divider>
 
         <v-card-text class="white--text">
-          {{ new Date().getFullYear() }} | <strong>Caldeirão Furado</strong> — Juliana izac
+          {{ new Date().getFullYear() }} — <strong>The Leaky Cauldron</strong> - Juliana Izac
         </v-card-text>
       </v-card>
-    </v-footer>
+  </v-footer>
 </template>
 
 <script>
   export default {
     data: () => ({
       icons: [
-        'mdi-github',
-        'mdi-linkedin'
-      ],
+        'mdi-home',
+        'mdi-email',
+        'mdi-calendar',
+        'mdi-delete',
+      ]
     }),
   }
 </script>

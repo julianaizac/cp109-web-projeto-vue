@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Casas from '../views/Casas.vue'
-import Personagens from '../views/Personagens.vue'
-import Horcruxes from '../views/Horcruxes.vue'
-import MateriasHogwarts from '../views/MateriasHogwarts.vue'
+import Characters from '../views/Characters.vue'
+import Gryffindor from '../views/Gryffindor.vue'
+import Slytherin from '../views/Slytherin.vue'
+import Hufflepuff from '../views/Hufflepuff.vue'
+import Ravenclaw from '../views/Ravenclaw.vue'
+
 
 Vue.use(VueRouter)
 
@@ -15,24 +17,31 @@ const routes = [
     component: Home
   },
   {
-    path: '/casas',
-    name: 'Casas',
-    component: Casas
+    path: '/characters',
+    name: 'Characters',
+    component: Characters
   },
   {
-    path: '/personagens',
-    name: 'Personagens',
-    component: Personagens
+    path: '/characters/gryffindor',
+    name: 'Gryffindor',
+    component: Gryffindor
   },
   {
-    path: '/horcruxes',
-    name: 'Horcruxes',
-    component: Horcruxes
-  },{
-    path: '/materiasHogwarts',
-    name: 'MateriasHogwarts',
-    component: MateriasHogwarts
-  }
+    path: '/characters/slytherin',
+    name: 'Slytherin',
+    component: Slytherin
+  },
+  {
+    path: '/characters/hufflepuff',
+    name: 'Hufflepuff',
+    component: Hufflepuff
+  },
+  {
+    path: '/characters/ravenclaw',
+    name: 'Ravenclaw',
+    component: Ravenclaw
+  },
+
   
 ]
 
