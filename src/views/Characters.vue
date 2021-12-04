@@ -7,7 +7,7 @@
         <v-row no-gutters>
             <v-col v-for="(data, i) in getterCharacters" 
                     :key="i" cols="12" sm="12" md="4" xs="2">
-                <CardPersonagem :cardInfo="data"/>
+                <CardCharacter :cardInfo="data"/>
             </v-col>
         </v-row>
     </v-container>
@@ -15,13 +15,13 @@
 
 <script>
 
-import CardPersonagem from "../components/CardPersonagem.vue"
+import CardCharacter from "../components/CardCharacter.vue"
 
 export default {
     name: 'Characters',
 
     components: {
-        CardPersonagem
+        CardCharacter
     },
 
     computed: {
